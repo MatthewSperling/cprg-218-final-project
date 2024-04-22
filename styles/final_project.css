@@ -7,7 +7,6 @@ body {
 /* Navigation Bar */
 .navbar {
     background-color: #333;
-    /* Dark grey background */
     overflow: hidden;
     position: fixed;
     top: 0;
