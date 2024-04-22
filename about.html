@@ -29,111 +29,150 @@
 
 </head>
 
-<!-- HERO SECTION -->
-<section class="hero-container">
-    <div class="hero-img">
-        <div class="hero-text">
-            <h1>About Us</h1>
-
-        </div>
-    </div>
-</section>
-
-<!-- ACCORDION SECTION -->
-<section class="accordion">
-    <h1 class="accordion-header">Equipment List</h1>
-    <button class="accordion-button">Microphones</button>
-    <div class="panel">
-        <ul>
-            <li>Sure Sm7 x2</li>
-            <li>Sure Sm57 x5</li>
-            <li>AKG DM112</li>
-            <li>Neauman U87</li>
-
-        </ul>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <a href="index.html#hero">Home</a>
+        <a href="index.html#portfolio">Pictures</a>
+        <a href="about.html">About Us</a>
+        <a href="about.html#accordion">Equipment List</a>
+        <a href="about.html#option-1">News</a>
     </div>
 
-    <button class="accordion-button">Ourboard</button>
-    <div class="panel">
-        <ul>
-            <li>DBX 160a x2</li>
-            <li>Shadow Hills Mastering Compressor</li>
-            <li>UA 1176 x2</li>
-            <li>Distressor x2</li>
-        </ul>
-    </div>
+    <!-- HERO SECTION -->
+    <section class="hero-container">
+        <div class="hero-img">
+            <div class="hero-text">
+                <h1>About Us</h1>
 
-    <button class="accordion-button">Speakers</button>
-    <div class="panel">
-        <ul>
-            <li>Genelic</li>
-            <li>Yamaha</li>
-            <li>Mackie</li>
-            <li>Rode </li>
-    </div>
-</section>
-
-<!-- News API -->
-
-<section class="option-1">
-    <div class="option-container">
-        <h2>News From Around The World </h2>
-        <p>Select News Source</p>
-        <select id="dropdown" class="dropdown"></select>
-        <button id="submit-button" class="button">Submit</button>
-    </div>
-    <div class="container">
-        <ul id="option-1-results" class="card-container"></ul>
-    </div>
-</section>
-<script src="./scripts/lab_four_custom.js" defer></script>
-
-
-<!-- FOOTER SECTION -->
-<section class="footer-container">
-    <div class="footer-wrapper">
-        <div class="footer-message">
-            <div class="footer-info">
-                <h2>Social Media</h2>
-                <p class="footer-icons">
-                    <i class="fa-regular fa-thumbs-up"></i>
-                    <i class="fa-solid fa-camera"></i>
-                    <i class="fa-solid fa-video"></i>
-                </p>
-                <h2>Higher me!</h2>
-                <p>
-                    I am avaliable for higher in Calgary.
-            </div>
-            <div class="footer-links">
-                <h2>Links</h2>
-                <p>
-                    <a href="#">Privacy Policy</a>
-                    <i class="fa-solid fa-chevron-right"></i>
-                </p>
-                <p>
-                    <a href="#">Terms of Use</a>
-                    <i class="fa-solid fa-chevron-right"></i>
-                </p>
-                <p>
-                    <a href="#">Accessibility</a>
-                    <i class="fa-solid fa-chevron-right"></i>
-                </p>
             </div>
         </div>
-        <div class="footer-map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.3906048482936!2d-114.08306122418807!3d51.04587504431523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716f2f8948af97%3A0xb1850bf5e65dacbd!2s825%208%20Ave%20SW%2C%20Calgary%2C%20AB%20T2P%202T4!5e0!3m2!1sen!2sca!4v1709688378564!5m2!1sen!2sca"
-                width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+    </section>
+
+    <!-- VIDEO SECTION -->
+    <section id="about" class="video-container">
+        <h1 class="video-message"> About Me</h1>
+        <div class="video-iframe">
+            <h4>
+                Welome to my studio!
+                <br />
+                <br />
+
+                I have been carefully curating instruments and equipment since I was in high school and now my home
+                studio
+                is open to the public! Check out this video of our core channel strip:
+                <br />
+                <br />
+
+
+            </h4>
+            <div class="iframe-wrapper">
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/lbh1DH7fjFk?si=sw6Yv2fhIL_6sryD&amp;controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
         </div>
-    </div>
-    <div class="footer-wrapper">
-        <div class="footer-copyright">
-            Copyright &#169; <span id="footer-year"></span> Matthew Sperling
+
+    </section>
+
+    <!-- ACCORDION SECTION -->
+    <section class="accordion">
+        <h1 class="accordion-header">Equipment List</h1>
+        <button class="accordion-button">Microphones</button>
+        <div class="panel">
+            <ul>
+                <li>Sure Sm7 x2</li>
+                <li>Sure Sm57 x5</li>
+                <li>AKG DM112</li>
+                <li>Neauman U87</li>
+
+            </ul>
         </div>
-    </div>
-</section>
+
+        <button class="accordion-button">Ourboard</button>
+        <div class="panel">
+            <ul>
+                <li>DBX 160a x2</li>
+                <li>Shadow Hills Mastering Compressor</li>
+                <li>UA 1176 x2</li>
+                <li>Distressor x2</li>
+            </ul>
+        </div>
+
+        <button class="accordion-button">Speakers</button>
+        <div class="panel">
+            <ul>
+                <li>Genelic</li>
+                <li>Yamaha</li>
+                <li>Mackie</li>
+                <li>Rode </li>
+        </div>
+    </section>
+
+    <!-- News API -->
+
+    <section class="option-1">
+        <div class="option-container">
+            <h2>News From Around The World </h2>
+            <p>Select News Source</p>
+            <select id="dropdown" class="dropdown"></select>
+            <button id="submit-button" class="button">Submit</button>
+        </div>
+        <div class="container">
+            <ul id="option-1-results" class="card-container"></ul>
+        </div>
+    </section>
+    <script src="./scripts/lab_four_custom.js" defer></script>
+
+
+    <!-- FOOTER SECTION -->
+    <section class="footer-container">
+        <div class="footer-wrapper">
+            <div class="footer-message">
+                <div class="footer-info">
+                    <h2>Social Media</h2>
+                    <p class="footer-icons">
+                        <i class="fa-regular fa-thumbs-up"></i>
+                        <i class="fa-solid fa-camera"></i>
+                        <i class="fa-solid fa-video"></i>
+                    </p>
+                    <h2>Book Today!</h2>
+                    <p>
+                        Mixing and Mastering!
+                </div>
+                <div class="footer-links">
+                    <h2>Links</h2>
+                    <p>
+                        <a href="#">Privacy Policy</a>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </p>
+                    <p>
+                        <a href="#">Terms of Use</a>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </p>
+                    <p>
+                        <a href="#">Accessibility</a>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2508.3906048482936!2d-114.08306122418807!3d51.04587504431523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716f2f8948af97%3A0xb1850bf5e65dacbd!2s825%208%20Ave%20SW%2C%20Calgary%2C%20AB%20T2P%202T4!5e0!3m2!1sen!2sca!4v1709688378564!5m2!1sen!2sca"
+                    width="80%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+        <div class="footer-wrapper">
+            <div class="footer-copyright">
+                Copyright &#169; <span id="footer-year"></span> Matthew Sperling
+            </div>
+        </div>
+    </section>
 
 </body>
 
