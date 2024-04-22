@@ -1,0 +1,292 @@
+body {
+    background-color: #fffefa;
+    color: #444;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Hero Section */
+
+.hero-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/bg.jpg");
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-text {
+    text-align: center;
+
+}
+
+.hero-text h1:hover {
+    color: #76AFE2;
+}
+
+.hero-text p:hover {
+    color: #76AFE2;
+}
+
+
+/* Content Section */
+
+.content-container {
+    background-color: unset;
+    height: inherit;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+
+.content-message {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-message button {
+    border: none;
+    width: 8rem;
+    height: 2rem;
+    background-color: #eee;
+    color: #444;
+}
+
+.content-message button:hover {
+    background-color: #ccc;
+    transition: 0.4s;
+}
+
+.content-image img {
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: contain;
+}
+
+.content-message button a {
+    color: #444;
+    text-decoration: none;
+}
+
+/* Card Section */
+.card-container {
+    padding: 3rem 1.5rem;
+}
+
+.card {
+    background: none;
+    border-radius: 0.25rem;
+    width: 24rem;
+    list-style-type: none;
+}
+
+.card img:hover {
+    cursor: pointer;
+}
+
+.card-wrapper {
+    max-width: 90rem;
+    margin: auto;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card-date {
+    padding: 1rem 0;
+}
+
+.card-header {
+    padding: 1rem 0;
+    color: #344165;
+}
+
+.card-description {
+    font-weight: 200;
+    width: 24rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.card-link {
+    color: #344165;
+}
+
+.card img {
+    border: none;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Video Section */
+
+.video-container {
+    margin: 3rem auto;
+    padding: 3rem 1.5rem;
+    max-width: 90rem;
+}
+
+.video-message {
+    text-align: left;
+}
+
+.iframe-wrapper {
+    text-align: center;
+
+}
+
+.video-iframe iframe {
+    width: 70%;
+    height: 70%;
+    aspect-ratio: 16/9;
+}
+
+.video-iframe p {
+    padding: 3rem 2rem;
+    font-weight: 200;
+}
+
+/* Accordion Section */
+
+.accordion-button {
+    background-color: #eee;
+    /* Light grey background */
+    color: #000;
+    /* Changed text color to black */
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: background-color 0.4s ease;
+}
+
+.active,
+.accordion-button:hover {
+    background-color: #ccc;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Footer Section */
+.footer-container {
+    background-color: black;
+    height: unset;
+    color: white;
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+}
+
+.footer-message {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.footer-icons {
+    font-size: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.footer-message a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-copyright {
+    margin: auto;
+}
+
+.footer-map {
+    width: 50%;
+    margin: auto;
+}
+
+
+
+/*
+    Screen less than 1200px
+
+*/
+@media (width <=1200px) {
+    .content {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .footer-message {
+        width: 100%;
+    }
+
+    .footer-wrapper {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .footer-map {
+        display: none;
+    }
+}
+
+/**
+    Screen less than 400px
+
+    
+**/
+
+@media (width <=400px) {
+    .content-image {
+        display: none;
+    }
+
+    .footer-message {
+        width: 100%;
+        flex-direction: column;
+    }
+
+}
